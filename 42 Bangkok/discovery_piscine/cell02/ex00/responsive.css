@@ -1,0 +1,27 @@
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+table {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+td  {
+    width: 50%;
+    height: 100%;
+}
+.cell1 {
+    background-color: black;
+    color: white;
+}
+.cell2 {
+    background-color: bisque;
+}
