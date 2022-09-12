@@ -1,0 +1,92 @@
+/* select all element */
+* {
+  margin: 0;
+  padding: 0;
+  /* see the element as box.*/
+  box-sizing: border-box;
+  font-family: arial;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  /* make it center at row view*/
+  justify-content: center;
+
+  /* make it center at column view */
+  align-items: center;
+  background-color: cornsilk;
+  flex-direction: column;
+}
+* a {
+  /* delete the under line */
+  text-decoration: none;
+}
+
+* li {
+  list-style: none;
+}
+
+.navbar {
+  background-color: #fff;
+  /* ระดับความมนของขอบ */
+  border-radius: 7px;
+
+  /* shadow of the box row, column & color */
+  box-shadow: 1.5px 2.5px #5dade2;
+}
+ul {
+  /* using flex system in unorder list */
+  display: flex;
+}
+
+li {
+  /* check where it is */
+  /*background-color: red;*/
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+
+  /* จัดตำแหน่งตาม div ตัวที่หุ้ม ในที่นี้คือ navbar */
+  position: relative;
+}
+li a {
+  /* ทุกอันที่เป็น list & link (a) */
+  /* ต้องมีช่องกั้น (padding) top-down, left-right*/
+  padding: 20px 40px;
+  /* text color */
+  color: #5dade2;
+}
+
+li:hover {
+  /* if every list tag have touch it will change color to ...*/
+  background-color: azure;
+}
+
+.dropdown {
+  /*  absolute จะแสดงผลเป็น “อิสระ” คือจะให้มันไปอยู่ตรงไหนก็ได้ ซึ่งมันจะอยู่แค่ภายใต้ element ที่ครอบมันอีกทีเท่านั้น*/
+  position: absolute;
+
+  /* block ปริศนาคำสั่ง display_ block และ display_ inline ของ CSS _ margin0auto*/
+  display: block;
+  background-color: #ffffff;
+
+  /* ตำแหน่งของ dropdown class ปรกติที่ยังไม่โดนกด*/
+  top: 120%;
+
+  /* ความชัด*/
+  opacity: 1;
+  border-radius: 4px;
+  box-shadow: 1.5px 2.5px #5dade2;
+
+  /* after 0.3 second the box will be hidden */
+  transition: 0.3s;
+  visibility: hidden;
+
+  /* width of the dropdown box  */
+  width: 200px;
+}
+.dropdown-link:hover .dropdown {
+  top: 105%;
+  opacity: 1;
+  visibility: visible;
+}
