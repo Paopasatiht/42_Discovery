@@ -1,0 +1,74 @@
+body, html {
+  /* why do we have to set the height to 100%, then the picture show */
+  /*  clear the space so we can use all of the height in the page. */
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("image1.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  opacity: 0.65;
+  /*background-attachment: scroll;*/
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.black_parallax {
+  /* The image used */
+  background-color: black;
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("image2.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+    /* relate with the Parrallax box create the middle box */
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    /*background-color: red;*/
+}
+
+.caption span.border {
+    background-color: #111;
+    /* background-image: url("image1.jpg"); */
+    color: #fff;
+
+    /* the padding top right bottom left * */
+    padding: 18px;
+    font-size: 150px;
+    /* Space between character */
+    letter-spacing: 10px;
+}
